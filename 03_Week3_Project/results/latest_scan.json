@@ -1,0 +1,15 @@
+{
+  "scan_timestamp": "2026-08-29T22:30:00Z",
+  "total_rules_analyzed": 4,
+  "security_posture_score": 70,
+  "risk_level": "MODERATE",
+  "findings_count": 1,
+  "findings": [
+    {
+      "rule_id": 4,
+      "severity": "CRITICAL",
+      "issue": "Overly permissive rule allows ANY traffic",
+      "recommendation": "Specify explicit protocols and ports instead of wildcards."
+    }
+  ]
+}

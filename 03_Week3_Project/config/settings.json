@@ -1,0 +1,12 @@
+{
+  "analyzer_name": "CyberOS Firewall Policy Risk Analyzer",
+  "version": "1.0.0",
+  "default_rule_path": "../sample_data/firewall_rules.json",
+  "severity_thresholds": {
+    "critical": 90,
+    "high": 70,
+    "moderate": 40,
+    "low": 10
+  },
+  "logging_enabled": true
+}
