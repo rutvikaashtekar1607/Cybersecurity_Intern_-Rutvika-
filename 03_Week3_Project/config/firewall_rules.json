@@ -1,0 +1,36 @@
+{
+  "rules": [
+    {
+      "id": 1,
+      "action": "ALLOW",
+      "protocol": "TCP",
+      "port": 23,
+      "source": "0.0.0.0/0",
+      "description": "Legacy remote management via Telnet"
+    },
+    {
+      "id": 2,
+      "action": "ALLOW",
+      "protocol": "TCP",
+      "port": 443,
+      "source": "0.0.0.0/0",
+      "description": "Secure HTTPS web traffic"
+    },
+    {
+      "id": 3,
+      "action": "ALLOW",
+      "protocol": "TCP",
+      "port": 3306,
+      "source": "0.0.0.0/0",
+      "description": "Unrestricted database exposure"
+    },
+    {
+      "id": 4,
+      "action": "DENY",
+      "protocol": "ANY",
+      "port": "ANY",
+      "source": "0.0.0.0/0",
+      "description": "Default implicit deny policy"
+    }
+  ]
+}

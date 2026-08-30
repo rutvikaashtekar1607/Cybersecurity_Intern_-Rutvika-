@@ -1,0 +1,29 @@
+{
+  "input_file": "C:\\Users\\Hp\\OneDrive\\Desktop\\cyber security intern rutvika\\cyber-firewall-engine\\sample_data\\firewall_rules.json",
+  "rules_analyzed": 4,
+  "findings": [
+    {
+      "finding_id": "F-002",
+      "rule_id": 2,
+      "severity": "HIGH",
+      "title": "Internet-wide SSH exposure",
+      "description": "The rule allows SSH port 22 from any source.",
+      "recommendation": "Limit port 22 to approved management sources or remove the rule if it is not required."
+    },
+    {
+      "finding_id": "F-003",
+      "rule_id": 3,
+      "severity": "MEDIUM",
+      "title": "Unrestricted protocol selection",
+      "description": "The ALLOW rule applies to any supported protocol.",
+      "recommendation": "Specify only the protocol required by the service."
+    }
+  ],
+  "posture_score": 70,
+  "posture": "HIGH RISK",
+  "finding_count": 2,
+  "severity_counts": {
+    "HIGH": 1,
+    "MEDIUM": 1
+  }
+}
