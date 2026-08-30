@@ -139,7 +139,13 @@ test_19_empty_findings_produce_no_findings_state PASSED
 
 Combined with Week 1's 5, that's **24 passing tests** across the project.
 
----
+## 📋 Project Compliance & Implementation Log (Days 1–3)
+
+| Project Phase | Core Requirements & Tasks | Status & Implementation Details |
+| :--- | :--- | :--- |
+| **Day 1: Setup & Baseline** | • Repository layout setup<br>• OS & Python 3.14.7 environment doc<br>• Asset inventory & trust boundaries | **Completed** — Documented across root level, `requirements.txt`, and `docs/WEEK2_DAY1_ASSET_INVENTORY.md`. |
+| **Day 2: Core Engine** | • Pipeline workflow execution<br>• Input parsing & logging<br>• Major error handling | **Completed** — Implemented via `packet_sniffer.py`, `rule_engine.py`, `logger.py`, and verified via unit tests. |
+| **Day 3: Hardening & Justification** | • Input validation & config checking<br>• Feature inclusion/exclusion justification<br>• Security-by-design assessment | **Completed** — Rule validation implemented (`rule_parser.py`); web dashboards and API auth explicitly deferred and justified in risk logs. |
 
 ## Repository Structure
 
