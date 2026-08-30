@@ -161,6 +161,7 @@ test_19_empty_findings_produce_no_findings_state PASSED
 | **📅 Day 1: Setup & Baseline** | • Repository layout setup<br>• OS & Python 3.14.7 environment doc<br>• Asset inventory & trust boundaries | **✅ Completed** — Documented across root level, `requirements.txt`, and `docs/WEEK2_DAY1_ASSET_INVENTORY.md`. |
 | **📅 Day 2: Core Engine** | • Pipeline workflow execution<br>• Input parsing & logging<br>• Major error handling | **✅ Completed** — Implemented via `packet_sniffer.py`, `rule_engine.py`, `logger.py`, and verified via unit tests. |
 | **📅 Day 3: Hardening & Justification** | • Input validation & config checking<br>• Feature inclusion/exclusion justification<br>• Security-by-design assessment | **✅ Completed** — Rule validation implemented (`rule_parser.py`); web dashboards and API auth explicitly deferred and justified in risk logs. |
+| **📅 Day 4: Testing & Validation** | • Comprehensive test suite (19 unit tests)<br>• Functional, negative & edge-case coverage<br>• Evidence logging & failure analysis | **Completed** — Executed `pytest` suite covering functional rules, negative validations, and edge-cases; generated execution and failure screenshots. |
 
 ---
 
