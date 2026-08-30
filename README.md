@@ -162,6 +162,21 @@ test_19_empty_findings_produce_no_findings_state PASSED
 | **📅 Day 2: Core Engine** | • Pipeline workflow execution<br>• Input parsing & logging<br>• Major error handling | **✅ Completed** — Implemented via `packet_sniffer.py`, `rule_engine.py`, `logger.py`, and verified via unit tests. |
 | **📅 Day 3: Hardening & Justification** | • Input validation & config checking<br>• Feature inclusion/exclusion justification<br>• Security-by-design assessment | **✅ Completed** — Rule validation implemented (`rule_parser.py`); web dashboards and API auth explicitly deferred and justified in risk logs. |
 | **📅 Day 4: Testing & Validation** | • Comprehensive test suite (19 unit tests)<br>• Functional, negative & edge-case coverage<br>• Evidence logging & failure analysis | **Completed** — Executed `pytest` suite covering functional rules, negative validations, and edge-cases; generated execution and failure screenshots. |
+ | **🚀 Day 5: Optimization & Final Validation** | • Code quality & security control review<br>• Improvement iteration documentation<br>• Final security validation outcome | **Completed** — Documented original approach, problem identified, and iterative improvements; verified final security posture scoring and test outcomes. |
+
+## 🔄 Day 5: Optimization & Final Validation — Improvement Iteration
+
+* **Original Approach:** Initially, firewall policies were evaluated purely at runtime using basic rule-matching (`rule_engine.py`) without an automated, static evaluation of policy hygiene or risk exposure before deployment.
+* **Problem Identified:** Manual rule review is error-prone, making it difficult to systematically detect overly permissive scopes (`0.0.0.0/0`) or sensitive port exposures (Telnet 23, MySQL 3306) across complex rule configurations.
+* **Improvement Made:** Developed a dedicated modular pipeline (`03_Week3_Project/`) featuring `rule_parser.py`, `risk_analyzer.py`, and `scorer.py` to automate static policy parsing, validate input safety, and compute a standardized risk posture score.
+* **Result After Improvement:** The system now automatically flags configuration weaknesses, produces a verifiable High Risk posture score (80/100) saved to `results/scan_results.json`, and maintains 100% test coverage across 19 unit tests without creating auxiliary security risks.
+  
+## 🛡️ Security Validation Outcome
+
+The completed security assessment tool successfully meets its intended security objective by demonstrating that it can:
+1. **Identify Configuration Weaknesses:** Systematically flag unauthorized or overly permissive rules and insecure port configurations from input rule files.
+2. **Enforce Strict Input Validation:** Safely reject malformed JSON, missing parameters, and invalid data types through robust exception handling.
+3. **Prioritize Risks Quantitatively:** Map findings to a structured risk scoring framework, ensuring systematic evaluation as documented in the threat model and risk register.
 
 ---
 
