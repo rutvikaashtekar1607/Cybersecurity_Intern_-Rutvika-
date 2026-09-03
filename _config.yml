@@ -1,0 +1,5 @@
+exclude:
+  - "03_Week3_Project/evidence/"
+  - "03_Week3_Project/reports/"
+  - "01_Week1_Exploration/"
+  - "02_Week2_Research_Design/"
